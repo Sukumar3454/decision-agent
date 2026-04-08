@@ -1,0 +1,23 @@
+[
+  {
+    "product": "Mahindra",
+    "revenue": 50000,
+    "growth_rate": 12,
+    "cost": 30000,
+    "customer_satisfaction": 80
+  },
+  {
+    "product": "KIA",
+    "revenue": 60000,
+    "growth_rate": 8,
+    "cost": 40000,
+    "customer_satisfaction": 75
+  },
+  {
+    "product": "BYD",
+    "revenue": 70000,
+    "growth_rate": 15,
+    "cost": 80000,
+    "customer_satisfaction": 95
+  }
+]
