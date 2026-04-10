@@ -1,23 +1,702 @@
 [
-  {
-    "product": "Mahindra",
-    "revenue": 50000,
-    "growth_rate": 12,
-    "cost": 30000,
-    "customer_satisfaction": 80
-  },
-  {
-    "product": "KIA",
-    "revenue": 60000,
-    "growth_rate": 8,
-    "cost": 40000,
-    "customer_satisfaction": 75
-  },
-  {
-    "product": "BYD",
-    "revenue": 70000,
-    "growth_rate": 15,
-    "cost": 80000,
-    "customer_satisfaction": 95
-  }
+    {
+        "product": "Product 1",
+        "revenue": 67909,
+        "growth_rate": 11,
+        "cost": 45243,
+        "customer_satisfaction": 94
+    },
+    {
+        "product": "Product 2",
+        "revenue": 35624,
+        "growth_rate": 19,
+        "cost": 14793,
+        "customer_satisfaction": 86
+    },
+    {
+        "product": "Product 3",
+        "revenue": 65903,
+        "growth_rate": 16,
+        "cost": 76755,
+        "customer_satisfaction": 87
+    },
+    {
+        "product": "Product 4",
+        "revenue": 76612,
+        "growth_rate": 5,
+        "cost": 21285,
+        "customer_satisfaction": 64
+    },
+    {
+        "product": "Product 5",
+        "revenue": 62727,
+        "growth_rate": 20,
+        "cost": 58419,
+        "customer_satisfaction": 84
+    },
+    {
+        "product": "Product 6",
+        "revenue": 84150,
+        "growth_rate": 13,
+        "cost": 64135,
+        "customer_satisfaction": 80
+    },
+    {
+        "product": "Product 7",
+        "revenue": 87080,
+        "growth_rate": 6,
+        "cost": 27274,
+        "customer_satisfaction": 88
+    },
+    {
+        "product": "Product 8",
+        "revenue": 45884,
+        "growth_rate": 12,
+        "cost": 48830,
+        "customer_satisfaction": 67
+    },
+    {
+        "product": "Product 9",
+        "revenue": 97819,
+        "growth_rate": 6,
+        "cost": 57249,
+        "customer_satisfaction": 66
+    },
+    {
+        "product": "Product 10",
+        "revenue": 58887,
+        "growth_rate": 9,
+        "cost": 56605,
+        "customer_satisfaction": 79
+    },
+    {
+        "product": "Product 11",
+        "revenue": 79676,
+        "growth_rate": 12,
+        "cost": 13823,
+        "customer_satisfaction": 76
+    },
+    {
+        "product": "Product 12",
+        "revenue": 73091,
+        "growth_rate": 15,
+        "cost": 18223,
+        "customer_satisfaction": 84
+    },
+    {
+        "product": "Product 13",
+        "revenue": 31988,
+        "growth_rate": 5,
+        "cost": 25370,
+        "customer_satisfaction": 67
+    },
+    {
+        "product": "Product 14",
+        "revenue": 82042,
+        "growth_rate": 14,
+        "cost": 68024,
+        "customer_satisfaction": 63
+    },
+    {
+        "product": "Product 15",
+        "revenue": 40123,
+        "growth_rate": 9,
+        "cost": 76056,
+        "customer_satisfaction": 83
+    },
+    {
+        "product": "Product 16",
+        "revenue": 96072,
+        "growth_rate": 17,
+        "cost": 33026,
+        "customer_satisfaction": 80
+    },
+    {
+        "product": "Product 17",
+        "revenue": 28483,
+        "growth_rate": 20,
+        "cost": 22213,
+        "customer_satisfaction": 90
+    },
+    {
+        "product": "Product 18",
+        "revenue": 86040,
+        "growth_rate": 15,
+        "cost": 16414,
+        "customer_satisfaction": 75
+    },
+    {
+        "product": "Product 19",
+        "revenue": 66501,
+        "growth_rate": 10,
+        "cost": 69644,
+        "customer_satisfaction": 64
+    },
+    {
+        "product": "Product 20",
+        "revenue": 85547,
+        "growth_rate": 6,
+        "cost": 53475,
+        "customer_satisfaction": 63
+    },
+    {
+        "product": "Product 21",
+        "revenue": 69083,
+        "growth_rate": 12,
+        "cost": 74758,
+        "customer_satisfaction": 73
+    },
+    {
+        "product": "Product 22",
+        "revenue": 59886,
+        "growth_rate": 20,
+        "cost": 16578,
+        "customer_satisfaction": 62
+    },
+    {
+        "product": "Product 23",
+        "revenue": 24198,
+        "growth_rate": 12,
+        "cost": 69678,
+        "customer_satisfaction": 83
+    },
+    {
+        "product": "Product 24",
+        "revenue": 57279,
+        "growth_rate": 15,
+        "cost": 18612,
+        "customer_satisfaction": 92
+    },
+    {
+        "product": "Product 25",
+        "revenue": 42556,
+        "growth_rate": 11,
+        "cost": 77980,
+        "customer_satisfaction": 78
+    },
+    {
+        "product": "Product 26",
+        "revenue": 90536,
+        "growth_rate": 6,
+        "cost": 71956,
+        "customer_satisfaction": 93
+    },
+    {
+        "product": "Product 27",
+        "revenue": 58776,
+        "growth_rate": 5,
+        "cost": 40619,
+        "customer_satisfaction": 67
+    },
+    {
+        "product": "Product 28",
+        "revenue": 89472,
+        "growth_rate": 12,
+        "cost": 60069,
+        "customer_satisfaction": 79
+    },
+    {
+        "product": "Product 29",
+        "revenue": 80709,
+        "growth_rate": 8,
+        "cost": 16057,
+        "customer_satisfaction": 93
+    },
+    {
+        "product": "Product 30",
+        "revenue": 92813,
+        "growth_rate": 9,
+        "cost": 64282,
+        "customer_satisfaction": 64
+    },
+    {
+        "product": "Product 31",
+        "revenue": 78648,
+        "growth_rate": 15,
+        "cost": 79659,
+        "customer_satisfaction": 76
+    },
+    {
+        "product": "Product 32",
+        "revenue": 61766,
+        "growth_rate": 14,
+        "cost": 69587,
+        "customer_satisfaction": 78
+    },
+    {
+        "product": "Product 33",
+        "revenue": 85967,
+        "growth_rate": 5,
+        "cost": 50515,
+        "customer_satisfaction": 93
+    },
+    {
+        "product": "Product 34",
+        "revenue": 34082,
+        "growth_rate": 11,
+        "cost": 16528,
+        "customer_satisfaction": 93
+    },
+    {
+        "product": "Product 35",
+        "revenue": 85754,
+        "growth_rate": 14,
+        "cost": 25037,
+        "customer_satisfaction": 90
+    },
+    {
+        "product": "Product 36",
+        "revenue": 35884,
+        "growth_rate": 9,
+        "cost": 17177,
+        "customer_satisfaction": 93
+    },
+    {
+        "product": "Product 37",
+        "revenue": 84544,
+        "growth_rate": 20,
+        "cost": 40859,
+        "customer_satisfaction": 91
+    },
+    {
+        "product": "Product 38",
+        "revenue": 58866,
+        "growth_rate": 6,
+        "cost": 47629,
+        "customer_satisfaction": 60
+    },
+    {
+        "product": "Product 39",
+        "revenue": 99322,
+        "growth_rate": 13,
+        "cost": 46226,
+        "customer_satisfaction": 69
+    },
+    {
+        "product": "Product 40",
+        "revenue": 50722,
+        "growth_rate": 11,
+        "cost": 52795,
+        "customer_satisfaction": 86
+    },
+    {
+        "product": "Product 41",
+        "revenue": 95182,
+        "growth_rate": 9,
+        "cost": 69145,
+        "customer_satisfaction": 91
+    },
+    {
+        "product": "Product 42",
+        "revenue": 29473,
+        "growth_rate": 8,
+        "cost": 48865,
+        "customer_satisfaction": 71
+    },
+    {
+        "product": "Product 43",
+        "revenue": 27280,
+        "growth_rate": 14,
+        "cost": 16446,
+        "customer_satisfaction": 63
+    },
+    {
+        "product": "Product 44",
+        "revenue": 29719,
+        "growth_rate": 20,
+        "cost": 79702,
+        "customer_satisfaction": 84
+    },
+    {
+        "product": "Product 45",
+        "revenue": 32522,
+        "growth_rate": 20,
+        "cost": 46457,
+        "customer_satisfaction": 74
+    },
+    {
+        "product": "Product 46",
+        "revenue": 85007,
+        "growth_rate": 5,
+        "cost": 60876,
+        "customer_satisfaction": 60
+    },
+    {
+        "product": "Product 47",
+        "revenue": 51717,
+        "growth_rate": 8,
+        "cost": 32319,
+        "customer_satisfaction": 86
+    },
+    {
+        "product": "Product 48",
+        "revenue": 47053,
+        "growth_rate": 14,
+        "cost": 22881,
+        "customer_satisfaction": 84
+    },
+    {
+        "product": "Product 49",
+        "revenue": 43724,
+        "growth_rate": 9,
+        "cost": 74273,
+        "customer_satisfaction": 92
+    },
+    {
+        "product": "Product 50",
+        "revenue": 83572,
+        "growth_rate": 11,
+        "cost": 32647,
+        "customer_satisfaction": 94
+    },
+    {
+        "product": "Product 51",
+        "revenue": 65582,
+        "growth_rate": 5,
+        "cost": 54439,
+        "customer_satisfaction": 60
+    },
+    {
+        "product": "Product 52",
+        "revenue": 80714,
+        "growth_rate": 19,
+        "cost": 52810,
+        "customer_satisfaction": 72
+    },
+    {
+        "product": "Product 53",
+        "revenue": 51952,
+        "growth_rate": 16,
+        "cost": 43778,
+        "customer_satisfaction": 95
+    },
+    {
+        "product": "Product 54",
+        "revenue": 74114,
+        "growth_rate": 15,
+        "cost": 14022,
+        "customer_satisfaction": 70
+    },
+    {
+        "product": "Product 55",
+        "revenue": 70226,
+        "growth_rate": 14,
+        "cost": 61530,
+        "customer_satisfaction": 61
+    },
+    {
+        "product": "Product 56",
+        "revenue": 90285,
+        "growth_rate": 8,
+        "cost": 37671,
+        "customer_satisfaction": 66
+    },
+    {
+        "product": "Product 57",
+        "revenue": 97857,
+        "growth_rate": 5,
+        "cost": 60703,
+        "customer_satisfaction": 69
+    },
+    {
+        "product": "Product 58",
+        "revenue": 88408,
+        "growth_rate": 8,
+        "cost": 63017,
+        "customer_satisfaction": 94
+    },
+    {
+        "product": "Product 59",
+        "revenue": 64725,
+        "growth_rate": 6,
+        "cost": 44561,
+        "customer_satisfaction": 78
+    },
+    {
+        "product": "Product 60",
+        "revenue": 57462,
+        "growth_rate": 14,
+        "cost": 68585,
+        "customer_satisfaction": 95
+    },
+    {
+        "product": "Product 61",
+        "revenue": 38334,
+        "growth_rate": 18,
+        "cost": 39427,
+        "customer_satisfaction": 81
+    },
+    {
+        "product": "Product 62",
+        "revenue": 63367,
+        "growth_rate": 17,
+        "cost": 78810,
+        "customer_satisfaction": 75
+    },
+    {
+        "product": "Product 63",
+        "revenue": 41843,
+        "growth_rate": 9,
+        "cost": 73900,
+        "customer_satisfaction": 85
+    },
+    {
+        "product": "Product 64",
+        "revenue": 99288,
+        "growth_rate": 6,
+        "cost": 37830,
+        "customer_satisfaction": 79
+    },
+    {
+        "product": "Product 65",
+        "revenue": 42774,
+        "growth_rate": 19,
+        "cost": 78179,
+        "customer_satisfaction": 69
+    },
+    {
+        "product": "Product 66",
+        "revenue": 46336,
+        "growth_rate": 16,
+        "cost": 44910,
+        "customer_satisfaction": 75
+    },
+    {
+        "product": "Product 67",
+        "revenue": 75868,
+        "growth_rate": 11,
+        "cost": 47473,
+        "customer_satisfaction": 75
+    },
+    {
+        "product": "Product 68",
+        "revenue": 27279,
+        "growth_rate": 6,
+        "cost": 46117,
+        "customer_satisfaction": 83
+    },
+    {
+        "product": "Product 69",
+        "revenue": 65106,
+        "growth_rate": 12,
+        "cost": 30561,
+        "customer_satisfaction": 83
+    },
+    {
+        "product": "Product 70",
+        "revenue": 36751,
+        "growth_rate": 12,
+        "cost": 54865,
+        "customer_satisfaction": 78
+    },
+    {
+        "product": "Product 71",
+        "revenue": 26246,
+        "growth_rate": 13,
+        "cost": 17178,
+        "customer_satisfaction": 93
+    },
+    {
+        "product": "Product 72",
+        "revenue": 41629,
+        "growth_rate": 12,
+        "cost": 59998,
+        "customer_satisfaction": 62
+    },
+    {
+        "product": "Product 73",
+        "revenue": 25531,
+        "growth_rate": 18,
+        "cost": 71719,
+        "customer_satisfaction": 81
+    },
+    {
+        "product": "Product 74",
+        "revenue": 66792,
+        "growth_rate": 16,
+        "cost": 67680,
+        "customer_satisfaction": 79
+    },
+    {
+        "product": "Product 75",
+        "revenue": 89556,
+        "growth_rate": 13,
+        "cost": 26779,
+        "customer_satisfaction": 77
+    },
+    {
+        "product": "Product 76",
+        "revenue": 55058,
+        "growth_rate": 8,
+        "cost": 35426,
+        "customer_satisfaction": 61
+    },
+    {
+        "product": "Product 77",
+        "revenue": 54402,
+        "growth_rate": 18,
+        "cost": 62661,
+        "customer_satisfaction": 82
+    },
+    {
+        "product": "Product 78",
+        "revenue": 27068,
+        "growth_rate": 8,
+        "cost": 76404,
+        "customer_satisfaction": 95
+    },
+    {
+        "product": "Product 79",
+        "revenue": 38305,
+        "growth_rate": 16,
+        "cost": 78000,
+        "customer_satisfaction": 79
+    },
+    {
+        "product": "Product 80",
+        "revenue": 25057,
+        "growth_rate": 14,
+        "cost": 13332,
+        "customer_satisfaction": 72
+    },
+    {
+        "product": "Product 81",
+        "revenue": 30720,
+        "growth_rate": 13,
+        "cost": 45730,
+        "customer_satisfaction": 94
+    },
+    {
+        "product": "Product 82",
+        "revenue": 85863,
+        "growth_rate": 12,
+        "cost": 56720,
+        "customer_satisfaction": 68
+    },
+    {
+        "product": "Product 83",
+        "revenue": 96739,
+        "growth_rate": 20,
+        "cost": 62358,
+        "customer_satisfaction": 82
+    },
+    {
+        "product": "Product 84",
+        "revenue": 57228,
+        "growth_rate": 18,
+        "cost": 26987,
+        "customer_satisfaction": 66
+    },
+    {
+        "product": "Product 85",
+        "revenue": 47752,
+        "growth_rate": 7,
+        "cost": 51267,
+        "customer_satisfaction": 85
+    },
+    {
+        "product": "Product 86",
+        "revenue": 84030,
+        "growth_rate": 16,
+        "cost": 62872,
+        "customer_satisfaction": 90
+    },
+    {
+        "product": "Product 87",
+        "revenue": 26227,
+        "growth_rate": 8,
+        "cost": 22274,
+        "customer_satisfaction": 61
+    },
+    {
+        "product": "Product 88",
+        "revenue": 53089,
+        "growth_rate": 9,
+        "cost": 56073,
+        "customer_satisfaction": 75
+    },
+    {
+        "product": "Product 89",
+        "revenue": 31748,
+        "growth_rate": 7,
+        "cost": 24444,
+        "customer_satisfaction": 62
+    },
+    {
+        "product": "Product 90",
+        "revenue": 33861,
+        "growth_rate": 17,
+        "cost": 12492,
+        "customer_satisfaction": 63
+    },
+    {
+        "product": "Product 91",
+        "revenue": 99062,
+        "growth_rate": 12,
+        "cost": 65203,
+        "customer_satisfaction": 75
+    },
+    {
+        "product": "Product 92",
+        "revenue": 80217,
+        "growth_rate": 5,
+        "cost": 38876,
+        "customer_satisfaction": 63
+    },
+    {
+        "product": "Product 93",
+        "revenue": 58206,
+        "growth_rate": 19,
+        "cost": 78131,
+        "customer_satisfaction": 77
+    },
+    {
+        "product": "Product 94",
+        "revenue": 75248,
+        "growth_rate": 7,
+        "cost": 40634,
+        "customer_satisfaction": 70
+    },
+    {
+        "product": "Product 95",
+        "revenue": 44377,
+        "growth_rate": 6,
+        "cost": 39527,
+        "customer_satisfaction": 66
+    },
+    {
+        "product": "Product 96",
+        "revenue": 25962,
+        "growth_rate": 14,
+        "cost": 25515,
+        "customer_satisfaction": 76
+    },
+    {
+        "product": "Product 97",
+        "revenue": 23451,
+        "growth_rate": 5,
+        "cost": 51048,
+        "customer_satisfaction": 95
+    },
+    {
+        "product": "Product 98",
+        "revenue": 53769,
+        "growth_rate": 15,
+        "cost": 14755,
+        "customer_satisfaction": 78
+    },
+    {
+        "product": "Product 99",
+        "revenue": 43906,
+        "growth_rate": 18,
+        "cost": 68577,
+        "customer_satisfaction": 89
+    },
+    {
+        "product": "Product 100",
+        "revenue": 36083,
+        "growth_rate": 9,
+        "cost": 12979,
+        "customer_satisfaction": 64
+    }
 ]

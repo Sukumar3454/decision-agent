@@ -1,3 +1,5 @@
+from llm_client import generate_explanation
+
 def calculate_score(product):
     score = (
         product["revenue"] * 0.3 +
@@ -33,9 +35,12 @@ def make_decision(products):
 
     reasoning.append(f"{best['product']} has the highest overall score")
 
+    llm_reason = generate_explanation(products, best["product"])
+
     return {
         "decision": best["product"],
         "score_summary": scores,
         "reasoning": reasoning,
+        "llm_explanation": llm_reason,
         "steps": steps
     }

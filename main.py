@@ -5,7 +5,9 @@ from typing import List
 import time
 import json
 import os
+import sqlite3
 from datetime import datetime
+from database import init_db, save_to_db
 
 app = FastAPI(title="Decision-Making AI Agent")
 
@@ -19,21 +21,28 @@ class Product(BaseModel):
     customer_satisfaction: float
 
 
-# ✅ Utility function to save results
+# ✅ Ensure data folder exists
+os.makedirs("data", exist_ok=True)
+
+
+# ✅ Initialize DB on startup
+@app.on_event("startup")
+def startup():
+    init_db()
+
+
+# ✅ Utility function to save results in JSON
 def save_result(data):
     file_path = "data/results.json"
 
-    # Load existing results
     try:
         with open(file_path, "r") as f:
             existing = json.load(f)
     except:
         existing = []
 
-    # Append new result
     existing.append(data)
 
-    # Save updated results
     with open(file_path, "w") as f:
         json.dump(existing, f, indent=4)
 
@@ -52,14 +61,12 @@ def decision_agent(data: List[Product]):
 
     start_time = time.time()
 
-    # Convert Pydantic → dict
     products = [item.dict() for item in data]
 
     result = make_decision(products)
 
     latency = round(time.time() - start_time, 4)
 
-    # Save result
     output = {
         "source": "api",
         "input": products,
@@ -67,7 +74,16 @@ def decision_agent(data: List[Product]):
         "latency": latency,
         "timestamp": str(datetime.now())
     }
+
+    # ✅ Save to file + DB
     save_result(output)
+    save_to_db(
+    products,
+    result,
+    latency,
+    str(datetime.now())
+)
+
 
     return output
 
@@ -92,7 +108,6 @@ def decision_from_file():
 
     latency = round(time.time() - start_time, 4)
 
-    # Save result
     output = {
         "source": "file",
         "input": data,
@@ -100,12 +115,20 @@ def decision_from_file():
         "latency": latency,
         "timestamp": str(datetime.now())
     }
+
+    # ✅ Save to file + DB
     save_result(output)
+    save_to_db(
+    data,        # full input data
+    result,      # full result
+    latency,
+    str(datetime.now())
+)
 
     return output
 
 
-# ✅ View saved results (Bonus endpoint)
+# ✅ View saved results
 @app.get("/results")
 def get_results():
     file_path = "data/results.json"
@@ -120,3 +143,15 @@ def get_results():
         "total_records": len(data),
         "results": data
     }
+
+@app.get("/db-results")
+def get_db_results():
+    conn = sqlite3.connect("decision.db")
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM results")
+    rows = cursor.fetchall()
+
+    conn.close()
+
+    return {"data": rows}
